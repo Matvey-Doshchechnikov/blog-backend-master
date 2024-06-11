@@ -96,10 +96,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'static/img'),
-    os.path.join(BASE_DIR, 'static/img/blog'),
-    os.path.join(BASE_DIR, 'static/img/blog/blog-slider'),
-    os.path.join(BASE_DIR, 'static/img/banner'),
+
 ]
 
 MEDIA_ROOT = os.getenv("MEDIA_ROOT", os.path.join(BASE_DIR, 'media'))
@@ -111,5 +108,4 @@ MEDIA_URL = os.getenv('MEDIA_URL', '/media/')
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
-print('STATIC_URL', STATIC_URL)
-print('STATICFILES_DIRS', STATICFILES_DIRS)
+
